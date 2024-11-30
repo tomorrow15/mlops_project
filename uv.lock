@@ -1,0 +1,19 @@
+version = 1
+requires-python = ">=3.12"
+
+[[package]]
+name = "anaconda"
+version = "0.0.1.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/bd/81/44690deb604d72ffa59ec6e5552f4ef21afb59c8e2698717c8a6be4af09c/anaconda-0.0.1.1.tar.gz", hash = "sha256:2e26def2dc581e92783d62772d8bf8c8328c9cc10407dc51c94268ca41decf37", size = 726 }
+
+[[package]]
+name = "mlops-project"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "anaconda" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "anaconda", specifier = ">=0.0.1.1" }]
