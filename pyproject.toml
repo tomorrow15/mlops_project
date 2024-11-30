@@ -2,26 +2,8 @@
 name = "mlops-project"
 version = "0.1.0"
 description = "Add your description here"
-authors = [
-    { name = "Tomorrow", email = "88825330+tomorrow15@users.noreply.github.com" }
-]
-dependencies = [
-    "fastapi>=0.115.5",
-    "flask>=3.1.0",
-]
 readme = "README.md"
-requires-python = ">= 3.8"
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
-[tool.rye]
-managed = true
-dev-dependencies = []
-
-[tool.hatch.metadata]
-allow-direct-references = true
-
-[tool.hatch.build.targets.wheel]
-packages = ["src/mlops_project"]
+requires-python = ">=3.12"
+dependencies = [
+    "anaconda>=0.0.1.1",
+]
